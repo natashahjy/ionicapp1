@@ -1,0 +1,13 @@
+<ion-view title="Schedule" id="page2">
+      <ion-content padding="true" class="has-header">
+            <ion-list>
+                 <ion-item class="item-avatar item-icon-right"
+                     ng-repeat="e in events">
+                 <img ng-src="img/{{e.img}}">
+                 <h2>{{e.name}}</h2>
+                 <p>{{e.time}}</p>
+                 <i class="icon ion-ios-heart-outline" ng-click="toggleFav(e)"></i>
+                 </ion-item>
+            </ion-list>
+      </ion-content>
+</ion-view>

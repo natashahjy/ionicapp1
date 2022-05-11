@@ -1,0 +1,14 @@
+<ion-view title="Event Search" id="page1">
+  <ion-content padding="true" class="has-header">
+    <form id="eventSearch-form3" class="list">
+      <label class="item item-select" id="eventSearch-select2">
+        <span class="input-label">Country</span>
+        <select ng-model="selected" 
+                 ng-options="item for item in countries">
+        </select>
+      </label>
+    </form>
+    <p>You are searching for events in {{selected}}</p>
+    <a ui-sref="tab.schedule({country:selected})" class="button button-positive button-block">Go</a>
+  </ion-content>
+</ion-view>
